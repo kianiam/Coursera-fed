@@ -1,0 +1,90 @@
+* {
+    font-family: 'Patrick Hand', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px auto 40px;
+    font-size: 1.75rem;
+}
+
+.food {
+    float: left;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.title {
+    position: relative;
+    float: right;
+    padding: 0.5%;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    width: 30%;
+    margin: 0;
+}
+
+.chicken .title {
+    background-color: palevioletred;
+    color: white;
+}
+
+.beef .title {
+    background-color: darkcyan;
+    color: white;
+}
+
+.sushi .title {
+    background-color: coral;
+    color: white;
+}
+
+.food p {
+    margin: 20px;
+    padding-top: 10px;
+    clear: right;
+}
+
+@media only screen and (min-width: 992px) {
+    .food {
+        width: 30%;
+    }
+    .chicken {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .sushi {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .chicken {
+        width: 46.25%;
+        margin: 1% 1.25% 1% 2.5%;
+    }
+    .beef {
+        width: 46.25%;
+        margin: 1% 2.5% 1% 1.25%
+    }
+    .sushi {
+        width: 95%;
+        margin: 2.5%;
+    }
+    .sushi .title {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .food {
+        width: 90%;
+        margin: 2.5% 5%;
+    }
+}
